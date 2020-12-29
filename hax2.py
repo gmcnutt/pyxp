@@ -6,6 +6,7 @@ import time
 
 
 class MainWindow(object):
+
     def __init__(self):
         window = sdl2.SDL_CreateWindow(
             bytes("haxima2", "utf-8"),
@@ -21,12 +22,6 @@ class MainWindow(object):
         sdl2.SDL_SetRenderDrawColor(self._renderer, 0, 0, 0, sdl2.SDL_ALPHA_OPAQUE)
         sdl2.SDL_RenderClear(self._renderer)
         sdl2.SDL_RenderPresent(self._renderer)
-
-
-def clear_screen():
-    sdl2.SDL_SetRenderDrawColor
-    pass
-
 
 def splash():
     clear_screen()
